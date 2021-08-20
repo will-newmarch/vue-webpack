@@ -95,6 +95,7 @@ module.exports = (env, argv) => {
             new VueLoaderPlugin(),
             new HtmlWebpackPlugin({
                 template: './public/index.html',
+                publicPath: '/',
             }),
             new MiniCssExtractPlugin(),
             new StylelintPlugin({ files: ['src/**/*.{vue,scss,css}'] }),
